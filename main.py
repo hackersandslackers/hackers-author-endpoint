@@ -4,7 +4,7 @@ from flask_cors import CORS
 from db import Database
 
 
-def main():
+def main(request):
     """Entry point."""
     db = Database()
     records = db.create_response()
