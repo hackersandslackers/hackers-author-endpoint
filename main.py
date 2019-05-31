@@ -7,5 +7,6 @@ from db import Database
 def main(request):
     """Entry point."""
     db = Database()
-    records = db.create_response('todd')
+    authorName = request.args.get('author')
+    records = db.create_response(authorName)
     return records
