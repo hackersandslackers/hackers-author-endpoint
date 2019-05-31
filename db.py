@@ -24,7 +24,7 @@ class Database:
         rows = [dict(row) for row in rows]  # Render as dict
         return rows[0]
 
-    def create_response(self, authorName):
+    def create_json_response(self, authorName):
         """Create JSON response of records."""
         response = self.database_get_records(authorName)
         return json.dumps(response)
