@@ -26,5 +26,5 @@ def main(request):
         }
     db = Database()
     authorName = request.args.get('author')
-    records = db.create_response(authorName)
+    records = db.make_response(authorName)
     return records
