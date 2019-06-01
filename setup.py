@@ -9,7 +9,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='Jira Issues Endpoint',
+    name='Hackers Authors Endpoint',
     version='0.0.1',
     description='Pulls author details for the hackersandslackers.com author page.',
     long_description=long_description,
@@ -26,7 +26,7 @@ setup(
     ],
     keywords='Database SQLAlchemy Postgres',
     packages=find_packages(),
-    install_requires=['SQLAlchemy', 'Psycopg2-Binary', 'SimpleJSON'],
+    install_requires=['Flask', 'Flask-SQLAlchemy', 'Psycopg2-Binary', 'SimpleJSON'],
     entry_points={
         'console_scripts': [
             'main',
