@@ -26,7 +26,7 @@ setup(
     ],
     keywords='Database SQLAlchemy Postgres',
     packages=find_packages(),
-    install_requires=['Flask', 'Flask-SQLAlchemy', 'Psycopg2-Binary', 'SimpleJSON'],
+    install_requires=['Flask', 'SQLAlchemy', 'Psycopg2-Binary', 'SimpleJSON'],
     entry_points={
         'console_scripts': [
             'main',
