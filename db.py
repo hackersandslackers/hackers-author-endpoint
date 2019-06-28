@@ -1,11 +1,10 @@
 """Pull authors from database."""
 from os import environ
 from sqlalchemy import create_engine, MetaData, text
-import simplejson as json
 
 
 class Database:
-    """Maanage DB connection, pull records."""
+    """Pull author records from database."""
 
     def __init__(self):
         self.uri = environ.get('SQLALCHEMY_DATABASE_URI')
@@ -27,4 +26,4 @@ class Database:
     def create_json_response(self, authorName):
         """Create JSON response of records."""
         response = self.database_get_records(authorName)
-        return json.dumps(response)
+        return response

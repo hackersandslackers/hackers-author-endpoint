@@ -11,7 +11,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 setup(
     name='Hackers Authors Endpoint',
     version='0.0.1',
-    description='Pulls author details for the hackersandslackers.com author page.',
+    description='Pulls individual author details & social accounts.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/hackersandslackers/hackers-author-endpoint',
